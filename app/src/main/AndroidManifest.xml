@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".bundle.BundleAProcessActivity"
+            />
+
+        <activity android:name=".bundle.BundleBProcessActivity"
+            android:process=":remote"
+            />
+
+        <activity android:name=".aidl.BookManagerActivity"/>
+
+        <service android:name=".aidl.BookManagerSevice"
+            android:process=":remote2"/>
     </application>
 
 </manifest>
